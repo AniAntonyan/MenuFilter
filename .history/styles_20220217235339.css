@@ -213,6 +213,7 @@ input{
   background: transparent;
   border-color: var(--clr-gold);
   font-size: 1rem;
+  text-transform: capitalize;
   margin: 0 0.5rem;
   letter-spacing: 1px;
   border-radius: var(--radius);
@@ -220,12 +221,6 @@ input{
   color: var(--clr-gold);
   transition: var(--transition);
 }
-
-input:hover{
-  background: var(--clr-gold);
-  color: var(--clr-white);
-}
-
 .section-center {
   width: 90vw;
   margin: 0 auto;

@@ -65,32 +65,5 @@ buttons.forEach(filterBtn => {
   })
 });
 
-let searchText = "";
-let search = document.querySelector("input");
-search.addEventListener("keyup", (e)=>{
-  searchText=e.target.value;
-  let searchArr = menu.filter(item =>{
-    return item.desc.indexOf(searchText)!==-1;
-  })
-  diplayMenuItems(searchArr);
-})
-
-// let list = [];
-// let searchText = "";
-
-const input = document.querySelector("input");
-input.addEventListener("keyup", (e) => {
-    searchText = e.target.value;
-    refresh();
- });
-let id;
-
-function refresh() {
-    if (id !== undefined) {
-        clearTimeout(id);
-    }
-    id = setTimeout(() => {
-        render();
-    }, 1000);
-}
-const root = document.querySelector("#root");
+let searchText = "";let search = document.querySelector("input");
+search

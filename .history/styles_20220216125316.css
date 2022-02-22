@@ -208,24 +208,6 @@ Menu
   background: var(--clr-gold);
   color: var(--clr-white);
 }
-
-input{
-  background: transparent;
-  border-color: var(--clr-gold);
-  font-size: 1rem;
-  margin: 0 0.5rem;
-  letter-spacing: 1px;
-  border-radius: var(--radius);
-  padding: 0.375rem 0.75rem;
-  color: var(--clr-gold);
-  transition: var(--transition);
-}
-
-input:hover{
-  background: var(--clr-gold);
-  color: var(--clr-white);
-}
-
 .section-center {
   width: 90vw;
   margin: 0 auto;

@@ -66,6 +66,7 @@ buttons.forEach(filterBtn => {
 });
 
 let searchText = "";
+let id;
 let search = document.querySelector("input");
 search.addEventListener("keyup", (e)=>{
   searchText=e.target.value;
@@ -78,11 +79,11 @@ search.addEventListener("keyup", (e)=>{
 // let list = [];
 // let searchText = "";
 
-const input = document.querySelector("input");
+// const input = document.querySelector("input");
 input.addEventListener("keyup", (e) => {
     searchText = e.target.value;
     refresh();
- });
+// });
 let id;
 
 function refresh() {
@@ -94,3 +95,17 @@ function refresh() {
     }, 1000);
 }
 const root = document.querySelector("#root");
+// function render() {
+//     root.innerHTML = "";
+//     menu.filter((name) => {
+//             return name.indexOf(searchText) !== -1;
+//         })
+//         .map(name => {
+//             const div = document.createElement("div");
+//             div.innerHTML = name;
+//             return div;
+//         }).forEach(element => {
+//             root.appendChild(element);
+//         });
+// }
+// render();
